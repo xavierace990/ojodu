@@ -1,0 +1,328 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Church of Christ Ojodu | Located at Lagos Igbehinadun</title>
+
+  <!-- Meta Description -->
+  <meta name="description" content="Welcome to Church of Christ Ojodu, located at Lagos Igbehinadun. Join us for worship and fellowship." />
+
+  <!-- Meta Keywords -->
+  <meta name="keywords" content="Church of Christ Ojodu, Lagos Igbehinadun, worship, fellowship, community" />
+
+  <!-- URL Structure -->
+  <link rel="canonical" href="https://churchofchristojodu.org/churchofchristojodu-located-at-lagos-igbehinadun/" />
+
+  <!-- Robots Meta Tag -->
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" type="image/x-icon" href="../static/img/coc-logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f3b99b4317.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+</head>
+<body style="font-family: 'Raleway', sans-serif;">
+  <style>
+
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px); /* Add blur effect */
+    background-color: rgba(255, 255, 255, 0.7); /* Add semi-transparent background color */
+  }
+ 
+    /* CSS for glass transparent cards */
+    .card {
+      flex: 1;
+      min-width: 300px; /* Set a minimum width for each card */
+      margin: 10px;
+      border-radius: 1rem;
+      border: 1px solid
+      box-shadow: 1.3rem,1.3rem,1.3rem rgba(0,0,0,0.5); /* Adjust the transparency here */
+      backdrop-filter: blur(1rem); /* Apply blur effect to create glass effect */
+      padding: 2rem 2.5rem;
+      background-color: rgba(225,225,225,0.1);
+      border-top-color: rgba(225, 225, 225, 0.5);
+      border-left-color: rgba(225, 225, 225, 0.5);
+      border-bottom-color: rgba(225, 225, 225, 0.1);
+      border-right-color: rgba(225, 225, 225, 0.1);
+    }
+
+    /* Centering elements */
+    .center {
+      text-align: center;
+    }
+
+    /* Responsive layout */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+      .card {
+        flex-basis: calc(50% - 20px); /* Two cards per row on smaller screens */
+      }
+    }
+
+    </style>
+  
+  
+  
+    <div style="background:  rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px)" class="offcanvas offcanvas-end" id="carousel">
+      <!--header-->
+      <div class="offcanvas-header ">
+        <img class="offcanvas-title " style="width: 80px;" src="../static/img/coc-logo.png" alt="">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <!--body-->
+      <div class="offcanvas-body p-4  ">
+        <a style="color: black;font-size: 15px;font-weight: lighter;" class="text-decoration-none " href="{% url 'index' %}">
+          <p>Home</p>
+        </a>
+        <a style="color: black;font-size: 15px;" class="text-decoration-none  " href="{% url 'about' %}">
+          <p>About</p>
+        </a>
+        <a  style="color: black;font-size: 15px;" class="text-decoration-none" href="{% url 'feedback' %}">
+          <p>Contact Us</p>
+        </a>
+        <a style="color: black;font-size: 15px;"  class="text-decoration-none" href="{% url 'preacher' %}">
+          <p>Our Preacher</p>
+        </a>
+        <a style="color: black;font-size: 15px;"  class="text-decoration-none" href="{% url 'teaching_sermon' %}">
+          <p>Teaching's and <br> Sermon's</p>
+        </a>
+        <a style="color: black;font-size: 15px;" class="text-decoration-none" href="{% url 'bulletins' %}">
+          <p>Bulletin</p>
+        </a>
+        <a style="color: black;font-size: 15px;" class="text-decoration-none" href="{% url 'first' %}">
+          <p>First Timer</p>
+        </a>
+      </div>
+  
+    </div>
+  
+    <!--hamburger-menu-->
+    <nav class="d-sm-flex p-3 navbar-dark bg-dark ">
+      <div class="container">
+        <center>
+          <span style="font-size: 12px;color: white;" class="" href="#">Opening Hours - 09 : 00AM Every Sunday <span>|</span></span>
+         <!-- Search input with search icon -->
+       
+         
+         <div>
+          <a  class="" href="https://www.facebook.com/profile.php?id=61553202030922"><button style="font-size: 12px;" class="btn btn-outline-primary"><i class="fa-brands fa-facebook"></i></button></a>
+  
+          <a  class="" href="https://instagram.com/ojoduchurchofchrist?igshid=OGY3MTU3OGY1Mw=="><button style="font-size: 12px;" class="btn btn-outline-danger"><i class="fa-brands fa-instagram"></i></button></a>
+  
+          <a  class="" href="https://www.youtube.com/@Church-of-christ-ojodu"><button style="font-size: 12px;" class="btn btn-outline-danger"><i class="fa-brands fa-youtube"></i></button></a>
+     
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            
+        </button>
+         </div>
+          </center>
+        
+      </div>
+      <div class="container-fluid d-none d-sm-block">
+        <center>
+            <a style="color: white;" class="text-decoration-none" href=""><button style="font-size: 12px;" class="btn btn-outline-secondary"><i class="fa-regular fa-envelope"></i></button> <span style="font-size: 12px;">churchofchristojodu@gmail.com</span></a>
+        </center>
+    </div>
+    
+    <div class="container-fluid d-none d-sm-block">
+        <center>
+            <a style="color: white;" class="text-decoration-none" href=""><button style="font-size: 12px;" class="btn btn-outline-primary"><i class="fa-solid fa-phone"></i></button> <span style="font-size: 12px;">Phone: +234 091 3822 3602</span></a>
+        </center>
+    </div>
+    
+  </nav>
+    <nav class="navbar navbar-expand-md navbar-dark  ">
+      <div class="container-fluid mt-1 ">
+       <a href="{% url 'index' %}"> <img class="img-fluid" style="width: 50px;margin-left: 20px;" src="../static/img/coc-logo.png" alt=""></a>
+  
+        <div style="background-image: url('');" class=" m-0 text-white">
+          <button class="btn btn-secondary mt-3 m-3 " type="button" data-bs-toggle="offcanvas" data-bs-target="#carousel">
+            <i class="fa-solid fa-bars fa-fade"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <section style="background-image: url('{% static 'img/believe.jpg' %}');background-repeat: repeat;background-position: center;background-size: cover;"  class="container-fluid">
+      
+        <h1 class="center" style="color: white;">Church Bulletin</h1>
+        <div class="container">
+          <div class="card">
+            <h3 style=" color: white;" class="text-center">January Bulletin</h3>
+            <div class="center">
+              <a href="{% url 'jan' %}"><button class="btn btn-light">View</button></a>
+              <a href="{% url 'january' %}"><button class="btn btn-light">Download</button></a>
+            </div>
+          </div>
+          <div class="card">
+            <h3 style=" color: white;" class="text-center">February Bulletin</h3>
+            <div class="center">
+              <a href="{% url 'feb' %}"><button class="btn btn-light">View</button></a>
+              <a href="{% url 'february' %}"><button class="btn btn-light">Download</button></a>
+            </div>
+          </div>
+          <div class="card">
+            <h3 style=" color: white;" class="text-center">March Bulletin</h3>
+            <div class="center">
+              <a href="{% url 'mar' %}"><button class="btn btn-light">View</button></a>
+              <a href="{% url 'march' %}"><button class="btn btn-light">Download</button></a>
+            </div>
+          </div>
+        </div>
+        
+
+          <!--section 2-->
+
+          
+            <div class="d-sm-flex  container">
+              <div class="card">
+                <center>
+                  <h3 style="color: white;">April Bulletin</h3>
+                  <br>
+                  <a href="{% url 'apr' %}"><button class="btn btn-light">View</button></a>
+                  <a href="{% url 'april' %}"><button class="btn btn-light">Download</button></a>
+                </center>
+              </div>
+              <div class="card">
+                <center>
+                  <h3 style="color: white;">May Bulletin</h3>
+                  <br>
+                  <a href="{% url 'may_b' %}"><button class="btn btn-light">View</button></a>
+                  <a href="{% url 'may' %}"><button class="btn btn-light">Download</button></a>
+                </center>
+              </div>
+              <div class="card">
+                <center>
+                  <h3 style="color: white;">June Bulletin</h3>
+                  <br>
+                  <a href="{% url 'jun' %}"><button class="btn btn-light">View</button></a>
+                  <a href="{% url 'june' %}"><button class="btn btn-light">Download</button></a>
+                </center>
+              </div>
+            </div>
+
+            <!--section 3-->
+              <div class="d-sm-flex mt-2 container">
+                <div class="card">
+                  <center>
+                    <h3 style="color: white;">July Bulletin</h3>
+                    <br>
+                    <a href="{% url 'jul' %}"><button class="btn btn-light">View</button></a>
+                    <a href="{% url 'july' %}"><button class="btn btn-light">Download</button></a>
+                  </center>
+                </div>
+                <div class="card">
+                  <center>
+                    <h3 style="color: white;">August Bulletin</h3>
+                    <br>
+                    <center>
+                      <a href="{% url 'aug' %}"><button class="btn btn-light">View</button></a>
+                      <a href="{% url 'august' %}"><button class="btn btn-light">Download</button></a>
+                    </center>
+                  </center>
+                </div>
+                <div class="card">
+                  <center>
+                    <h3 style="color: white;">September Bulletin</h3>
+                    <br>
+                    <center>
+                      <a href="{% url 'sep' %}"><button class="btn btn-light">View</button></a>
+                      <a href="{% url 'september' %}"><button class="btn btn-light">Download</button></a>
+                    </center>
+                  </center>
+                </div>
+              </div>
+
+             
+              <!-- Section 4 -->
+
+  <div class="d-sm-flex mt-2 container">
+    <div class="card">
+      <center>
+        <h3 style="color: white;">October Bulletin</h3>
+        <br>
+        <a href="{% url 'oct' %}"><button class="btn btn-light">View</button></a>
+        <a href="{% url 'october' %}"><button class="btn btn-light">Download</button></a>
+      </center>
+    </div>
+    <div class="card">
+      <center>
+        <h3 style="color: white;">November Bulletin</h3>
+        <br>
+        <a href="{% url 'nov' %}"><button class="btn btn-light">View</button></a>
+        <a href="{% url 'november' %}"><button class="btn btn-light">Download</button></a>
+      </center>
+    </div>
+    <div class="card">
+      <center>
+        <h3 style="color: white;">December Bulletin</h3>
+        <br>
+        <center>
+          <a href="{% url 'dec' %}"><button class="btn btn-light">View</button></a>
+          <a href="{% url 'december' %}"><button class="btn btn-light">Download</button></a>
+        </center>
+      </center>
+    </div>
+  </div>
+
+      </section>
+          
+   
+
+
+
+    </section>
+  </section>
+
+    
+        <!-- Footer Section -->
+<footer  class="footer p-5">
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <h4>Contact Us</h4>
+            <p><i class="fas fa-map-marker-alt"></i> 9,IGBEHINADUN STREET, OFF ODOZI,OJODU</p>
+            <p><i class="fas fa-phone"></i> Phone: +1 (123) 456-7890</p>
+            <p><i class="fas fa-envelope"></i> Email: churchofchristojodu <br> @gmail.com</p>
+        </div>
+        <div class="col-md-4">
+          <h4>Quick Links</h4>
+          <ul class="list-unstyled text-decoration-none">
+              <li><a style="color: black;" class="text-decoration-none" href="{% url 'index' %}">Home</a></li>
+              <br>
+              <li><a style="color: black;" class="text-decoration-none" href="{% url 'about' %}">About Us</a></li>
+              <br>
+              <li><a style="color: black;" class="text-decoration-none" href="{% url 'feedback' %}">Contact</a></li>
+          </ul>
+      </div>
+            <div class="col-md-4">
+                <h4>Connect With Us</h4>
+                <p>Stay updated with our latest news and updates:</p>
+                <div class="social-icons">
+                    <a href="#"><i style="font-size: xx-large;" class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com/ojoduchurchofchrist?igshid=OGY3MTU3OGY1Mw=="><i style="font-size: xx-large;color: red;" class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@Church-of-christ-ojodu"><i style="font-size: xx-large;color: red;" class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+  <!-- End Footer Section -->
+</body>
+</html>
+
+
+

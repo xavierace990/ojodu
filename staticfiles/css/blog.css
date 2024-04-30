@@ -1,0 +1,156 @@
+*{
+    transition: all 500
+}
+mm{
+    background-image: linear-gradient(black,darkorchid);
+}
+.title{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 40rem;
+    font-size: 4rem;
+    text-align: center;
+
+}
+
+.cb1{
+    background-color: rgba(225, 225, 225, 0.1);
+}
+    #demo {
+      max-width: 600px;
+      /* Limit the width of the carousel */
+      margin: 0 auto;
+      margin-top: 40px;
+    }
+
+    #carousel {
+      margin: 0 auto;
+    }
+
+    .carousel-inner .carousel-item img {
+      max-height: 500px;
+      /* Set the maximum height of the images */
+      object-fit: cover;
+      /* Maintain aspect ratio while covering the container */
+    }
+
+   
+    .list-unstyled:hover{
+      color: red;
+    }
+    @keyframes slideInFromLeft {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInFromRight {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .animated-box {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        .box-left {
+            animation-name: slideInFromLeft;
+        }
+        .box-right {
+            animation-name: slideInFromRight;
+        }
+        @keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.slide-up {
+    animation: slideInFromBottom 2s ease-out ;
+    
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px); /* Add blur effect */
+  background-color: rgba(255, 255, 255, 0.7); /* Add semi-transparent background color */
+}
+
+.small-img {
+  width: 100%; /* Adjust the width to fit the container */
+  
+  height: 200px; /* Adjust the height as needed */
+  object-fit: cover;
+  object-position: center;
+}
+
+.transparent-bg {
+  background-color: transparent !important;
+}
+
+.blog-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  
+}
+
+.blog-post {
+  flex-basis: calc(50% - 15px); /* Adjust the width of each post */
+  margin-bottom: 30px;
+}
+
+.large-post {
+  flex-basis: 100%;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.category-dropdown {
+  margin-left: 10px; /* Adjust the margin as needed */
+}
+
+.card-links {
+  padding: 10px;
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f8f9fa; /* Adjust background color as needed */
+  padding: 20px;
+  overflow-y: auto;
+}
+
+@media (max-width: 991.98px) {
+  .sidebar {
+      position: static;
+      background-color: transparent;
+      padding: 0;
+      overflow-y: initial;
+  }
+}
+.fixed-height {
+  height: 200px; /* Adjust the height as needed */
+  object-fit: cover;
+  object-position: center;
+}

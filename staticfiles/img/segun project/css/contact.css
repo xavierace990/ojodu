@@ -1,0 +1,22 @@
+.sect{
+    background-image: url('../img/dark.jpg');
+    height: 400px;
+    
+}
+.navbar-nav-custom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .navbar-nav-custom .nav-item {
+    margin: 10px 0; /* Adjust the margin as needed */
+  }
+  .breadcrumb{
+    background-color: white;
+    padding: 10px;
+    width: 165px;
+    margin-top: 100px;
+    
+  }

@@ -1,0 +1,317 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Church of Christ Ojodu | Located at Lagos Igbehinadun</title>
+
+  <!-- Meta Description -->
+  <meta name="description" content="Welcome to Church of Christ Ojodu, located at Lagos Igbehinadun. Join us for worship and fellowship." />
+
+  <!-- Meta Keywords -->
+  <meta name="keywords" content="Church of Christ Ojodu, Lagos Igbehinadun, worship, fellowship, community" />
+
+  <!-- URL Structure -->
+  <link rel="canonical" href="https://churchofchristojodu.org/churchofchristojodu-located-at-lagos-igbehinadun/" />
+
+  <!-- Robots Meta Tag -->
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" type="image/x-icon" href="../static/img/coc-logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/f3b99b4317.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
+    
+    
+</head>
+<body style="font-family: 'Raleway', sans-serif;">
+  <style>
+    .title{
+      margin: 0 auto;
+      width: 100%;
+      max-width: 40rem;
+      font-size: 4rem;
+      text-align: center;
+  
+  }
+  .card{
+      width: 90%;
+      max-width: 400px;
+      padding: 2rem 2.5rem;
+  
+      border-radius: 1rem;
+      border: 1px solid;
+  
+      backdrop-filter: blur(1rem);
+      box-shadow: 1.3rem 1.3rem 1.3rem rgba(0,0,0,0.5);
+  
+      border-top-color: rgba(225, 225, 225, 0.5);
+      border-left-color: rgba(225, 225, 225, 0.5);
+      border-bottom-color: rgba(225, 225, 225, 0.1);
+      border-right-color: rgba(225, 225, 225, 0.1);
+  }
+  .cb1{
+      background-color: rgba(225, 225, 225, 0.1);
+  }
+      #demo {
+        max-width: 600px;
+        /* Limit the width of the carousel */
+        margin: 0 auto;
+        margin-top: 40px;
+      }
+  
+      #carousel {
+        margin: 0 auto;
+      }
+  
+      .carousel-inner .carousel-item img {
+        max-height: 500px;
+        /* Set the maximum height of the images */
+        object-fit: cover;
+        /* Maintain aspect ratio while covering the container */
+      }
+  
+      .background-section {
+        background-image: url('../static/believe.jpg');
+        background-position: center;
+        background-size: cover;
+      }
+      .list-unstyled:hover{
+        color: red;
+      }
+      @keyframes slideInFromLeft {
+              0% {
+                  transform: translateX(-100%);
+              }
+              100% {
+                  transform: translateX(0);
+              }
+          }
+  
+          @keyframes slideInFromRight {
+              0% {
+                  transform: translateX(100%);
+              }
+              100% {
+                  transform: translateX(0);
+              }
+          }
+  
+          .animated-box {
+              animation-duration: 1s;
+              animation-fill-mode: both;
+          }
+  
+          .box-left {
+              animation-name: slideInFromLeft;
+          }
+          .box-right {
+              animation-name: slideInFromRight;
+          }
+          @keyframes slideInFromBottom {
+      0% {
+          transform: translateY(100%);
+      }
+      100% {
+          transform: translateY(0);
+      }
+  }
+  
+  .slide-up {
+      animation: slideInFromBottom 2s ease-out ;
+      
+  }
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px); /* Add blur effect */
+    background-color: rgba(255, 255, 255, 0.7); /* Add semi-transparent background color */
+  }
+  
+    </style>
+  
+  
+  
+    <div style="background:  rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px)" class="offcanvas offcanvas-end" id="carousel">
+      <!--header-->
+      <div class="offcanvas-header ">
+        <img class="offcanvas-title " style="width: 80px;" src="../static/img/coc-logo.png" alt="">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <!--body-->
+      <div class="offcanvas-body p-4  ">
+        <a style="color: black;font-size: 15px;font-weight: lighter;" class="text-decoration-none " href="{% url 'index' %}">
+          <p>Home</p>
+        </a>
+        <a style="color: black;font-size: 15px;" class="text-decoration-none  " href="{% url 'about' %}">
+          <p>About</p>
+        </a>
+        <a  style="color: black;font-size: 15px;" class="text-decoration-none" href="{% url 'feedback' %}">
+          <p>Contact Us</p>
+        </a>
+        <a style="color: black;font-size: 15px;"  class="text-decoration-none" href="{% url 'preacher' %}">
+          <p>Our Preacher</p>
+        </a>
+        <a style="color: black;font-size: 15px;"  class="text-decoration-none" href="{% url 'teaching_sermon' %}">
+          <p>Teaching's and <br> Sermon's</p>
+        </a>
+        <a style="color: black;font-size: 15px;" class="text-decoration-none" href="{% url 'bulletins' %}">
+          <p>Bulletin</p>
+        </a>
+        <a style="color: black;font-size: 15px;" class="text-decoration-none" href="{% url 'first' %}">
+          <p>First Timer</p>
+        </a>
+      </div>
+  
+    </div>
+  
+    <!--hamburger-menu-->
+    <nav class="d-sm-flex p-3 navbar-dark bg-dark ">
+      <div class="container">
+        <center>
+          <span style="font-size: 12px;color: white;" class="" href="#">Opening Hours - 09 : 00AM Every Sunday <span>|</span></span>
+         <!-- Search input with search icon -->
+       
+         
+         <div>
+          <a  class="" href="https://www.facebook.com/profile.php?id=61553202030922"><button style="font-size: 12px;" class="btn btn-outline-primary"><i class="fa-brands fa-facebook"></i></button></a>
+  
+          <a  class="" href="https://instagram.com/ojoduchurchofchrist?igshid=OGY3MTU3OGY1Mw=="><button style="font-size: 12px;" class="btn btn-outline-danger"><i class="fa-brands fa-instagram"></i></button></a>
+  
+          <a  class="" href="https://www.youtube.com/@Church-of-christ-ojodu"><button style="font-size: 12px;" class="btn btn-outline-danger"><i class="fa-brands fa-youtube"></i></button></a>
+     
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            
+        </button>
+         </div>
+          </center>
+        
+      </div>
+      <div class="container-fluid d-none d-sm-block">
+        <center>
+            <a style="color: white;" class="text-decoration-none" href=""><button style="font-size: 12px;" class="btn btn-outline-secondary"><i class="fa-regular fa-envelope"></i></button> <span style="font-size: 12px;">churchofchristojodu@gmail.com</span></a>
+        </center>
+    </div>
+    
+    <div class="container-fluid d-none d-sm-block">
+        <center>
+            <a style="color: white;" class="text-decoration-none" href=""><button style="font-size: 12px;" class="btn btn-outline-primary"><i class="fa-solid fa-phone"></i></button> <span style="font-size: 12px;">Phone: +234 091 3822 3602</span></a>
+        </center>
+    </div>
+    
+  </nav>
+    <nav class="navbar navbar-expand-md navbar-dark  ">
+      <div class="container-fluid mt-1 ">
+       <a href="{% url 'index' %}"> <img class="img-fluid" style="width: 50px;margin-left: 20px;" src="../static/img/coc-logo.png" alt=""></a>
+  
+        <div style="background-image: url('');" class=" m-0 text-white">
+          <button class="btn btn-secondary mt-3 m-3 " type="button" data-bs-toggle="offcanvas" data-bs-target="#carousel">
+            <i class="fa-solid fa-bars fa-fade"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- donation.html -->
+    <section style="background-image: url('../static/img/believe.jpg');background-position: center;background-size: cover;background-repeat: no-repeat;" class="container-fluid ">
+      <div class="container-fluid text-center">
+          <h2 style="color: white;" class="display-4">Support Our Mission</h2>
+          <p style="color: white;">
+              At Church of Christ Ojodu, we are driven by a shared mission: [Briefly describe your mission and purpose]. We believe that positive change is possible through collective effort, and we invite you to join us in making a difference.
+          </p>
+      </div>
+      <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 d-flex justify-content-center animated-box box-left">
+
+                <div class="card m-2 cb1 text-center" >
+                    
+                    <div class="card-body">
+                      
+                      <h2 style="color: white;font-weight: lighter;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);" class="card-title ">Your Giving Matters</h2>
+                      <p style="" class="card-text">
+                        <i class="fas fa-star"></i> Every contribution you make directly supports our initiatives and programs aimed at [Describe the key areas or projects your organization focuses on]. Your donation will enable us to [Highlight the impact of donations, such as providing resources, aiding individuals, or driving positive change].
+                    </p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-md-6 d-flex justify-content-center animated-box box-right">
+
+              <div class="card m-2 cb1 text-center" >
+                  
+                  <div class="card-body">
+                    <h2 style="color: white;font-weight: lighter;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);" class="card-title ">How You Can Help</h2>
+                    <p style="color: white;" class="card-text">
+                      <i class="fas fa-star"></i> One-Time Donation: Your one-time donation, no matter the amount, will help us make an immediate impact in our community. Every dollar brings us one step closer to achieving our goals.
+                  </p>
+                  <p style="color: white;" class="card-text">
+                    <i class="fas fa-star"></i> Monthly Giving: Consider becoming a monthly donor to provide sustained support for our ongoing projects. Monthly contributions add up and empower us to plan for the long term.</p>
+                  </div>
+                </div>
+          </div>
+          <center>          
+            <div class="col-md-6 d-flex justify-content-center slide-up">
+
+            <div class="card m-2 cb1 text-center" >
+                
+                <div class="card-body">
+                  
+                  <h2 style="color: white;font-weight: lighter;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);" class="card-title ">Give Here Via Transfer</h2>
+                   <p class="card-text">
+                  <p style="color: white;">Bank: First Bank Plc</p>
+                </p>
+                <p class="card-text">
+                  <p style="color: white;">Account Name: CHURCH OF CHRIST OJODU</p> 
+                  <p style="color: white;">Account Number: 2004445801</p>
+                </p>
+                </div>
+              </div>
+        </div>
+      </center>
+
+        </div>
+    </div>
+
+    
+  </section>
+  <br>
+        <!-- Footer Section -->
+<footer style="background: rgb(0, 30, 44);color: white;"class="footer p-5">
+  <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Contact Us</h4>
+          <p><i class="fas fa-map-marker-alt"></i> 9,IGBEHINADUN STREET, OFF ODOZI,OJODU</p>
+          <p><i class="fas fa-phone"></i> Phone: +1 (123) 456-7890</p>
+          <p><i class="fas fa-envelope"></i> Email: churchofchristojodu <br> @gmail.com</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Quick Links</h4>
+        <ul class="list-unstyled text-decoration-none">
+            <li><a style="color: white;" class="text-decoration-none" href="{% url 'index' %}">Home</a></li>
+            <br>
+            <li><a style="color: white;" class="text-decoration-none" href="{% url 'about' %}">About Us</a></li>
+            <br>
+            <li><a style="color: white;" class="text-decoration-none" href="{% url 'feedback' %}">Contact</a></li>
+        </ul>
+    </div>
+          <div class="col-md-4">
+              <h4>Connect With Us</h4>
+              <p>Stay updated with our latest news and updates:</p>
+              <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61553202030922"><i style="font-size: xx-large;" class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com/ojoduchurchofchrist?igshid=OGY3MTU3OGY1Mw=="><i style="font-size: xx-large;color: red;" class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@Church-of-christ-ojodu"><i style="font-size: xx-large;color: red;" class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+      </div>
+  </div>
+</footer>
+<!-- End Footer Section -->
+
+</body>
+</html>

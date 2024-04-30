@@ -1,0 +1,337 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Church of Christ Ojodu | Located at Lagos Igbehinadun</title>
+
+  <!-- Meta Description -->
+  <meta name="description" content="Welcome to Church of Christ Ojodu, located at Lagos Igbehinadun. Join us for worship and fellowship." />
+
+  <!-- Meta Keywords -->
+  <meta name="keywords" content="Church of Christ Ojodu, Lagos Igbehinadun, worship, fellowship, community" />
+
+  <!-- URL Structure -->
+  <link rel="canonical" href="https://churchofchristojodu.org/churchofchristojodu-located-at-lagos-igbehinadun/" />
+
+  <!-- Robots Meta Tag -->
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" type="image/x-icon" href="../static/img/coc-logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/f3b99b4317.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
+</head>
+<body style="font-family: 'Raleway', sans-serif;">
+  <style>
+    .title{
+      margin: 0 auto;
+      width: 100%;
+      max-width: 40rem;
+      font-size: 4rem;
+      text-align: center;
+  
+  }
+  .card{
+      width: 90%;
+      max-width: 400px;
+      padding: 2rem 2.5rem;
+  
+      border-radius: 1rem;
+      border: 1px solid;
+  
+      backdrop-filter: blur(1rem);
+      box-shadow: 1.3rem 1.3rem 1.3rem rgba(0,0,0,0.5);
+  
+      border-top-color: rgba(225, 225, 225, 0.5);
+      border-left-color: rgba(225, 225, 225, 0.5);
+      border-bottom-color: rgba(225, 225, 225, 0.1);
+      border-right-color: rgba(225, 225, 225, 0.1);
+  }
+  .cb1{
+      background-color: rgba(225, 225, 225, 0.1);
+  }
+      #demo {
+        max-width: 600px;
+        /* Limit the width of the carousel */
+        margin: 0 auto;
+        margin-top: 40px;
+      }
+  
+      #carousel {
+        margin: 0 auto;
+      }
+  
+      .carousel-inner .carousel-item img {
+        max-height: 500px;
+        /* Set the maximum height of the images */
+        object-fit: cover;
+        /* Maintain aspect ratio while covering the container */
+      }
+  
+      .background-section {
+        background-image: url('../static/believe.jpg');
+        background-position: center;
+        background-size: cover;
+      }
+      .list-unstyled:hover{
+        color: red;
+      }
+      @keyframes slideInFromLeft {
+              0% {
+                  transform: translateX(-100%);
+              }
+              100% {
+                  transform: translateX(0);
+              }
+          }
+  
+          @keyframes slideInFromRight {
+              0% {
+                  transform: translateX(100%);
+              }
+              100% {
+                  transform: translateX(0);
+              }
+          }
+  
+          .animated-box {
+              animation-duration: 1s;
+              animation-fill-mode: both;
+          }
+  
+          .box-left {
+              animation-name: slideInFromLeft;
+          }
+          .box-right {
+              animation-name: slideInFromRight;
+          }
+          @keyframes slideInFromBottom {
+      0% {
+          transform: translateY(100%);
+      }
+      100% {
+          transform: translateY(0);
+      }
+  }
+  
+  .slide-up {
+      animation: slideInFromBottom 2s ease-out ;
+      
+  }
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px); /* Add blur effect */
+    background-color: rgba(255, 255, 255, 0.7); /* Add semi-transparent background color */
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.custom-form {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea.form-control {
+    height: 120px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+    </style>
+  
+  
+  
+    <div style="background:  rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px)" class="offcanvas offcanvas-end" id="carousel">
+      <!--header-->
+      <div class="offcanvas-header ">
+        <img class="offcanvas-title " style="width: 80px;" src="../static/img/coc-logo.png" alt="">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <!--body-->
+      <div class="offcanvas-body p-4  ">
+        <a style="color: black;font-size: 15px;font-weight: lighter;" class="text-decoration-none " href="{% url 'index' %}">
+          <p>Home</p>
+        </a>
+        <a style="color: black;font-size: 15px;" class="text-decoration-none  " href="{% url 'about' %}">
+          <p>About</p>
+        </a>
+        <a  style="color: black;font-size: 15px;" class="text-decoration-none" href="{% url 'feedback' %}">
+          <p>Contact Us</p>
+        </a>
+        <a style="color: black;font-size: 15px;"  class="text-decoration-none" href="{% url 'preacher' %}">
+          <p>Our Preacher</p>
+        </a>
+        <a style="color: black;font-size: 15px;"  class="text-decoration-none" href="{% url 'teaching_sermon' %}">
+          <p>Teaching's and <br> Sermon's</p>
+        </a>
+        <a style="color: black;font-size: 15px;" class="text-decoration-none" href="{% url 'bulletins' %}">
+          <p>Bulletin</p>
+        </a>
+        <a style="color: black;font-size: 15px;" class="text-decoration-none" href="{% url 'first' %}">
+          <p>First Timer</p>
+        </a>
+      </div>
+  
+    </div>
+  
+    <!--hamburger-menu-->
+    <nav class="d-sm-flex p-3 navbar-dark bg-dark ">
+      <div class="container">
+        <center>
+          <span style="font-size: 12px;color: white;" class="" href="#">Opening Hours - 09 : 00AM Every Sunday <span>|</span></span>
+         <!-- Search input with search icon -->
+       
+         
+         <div>
+          <a  class="" href="https://www.facebook.com/profile.php?id=61553202030922"><button style="font-size: 12px;" class="btn btn-outline-primary"><i class="fa-brands fa-facebook"></i></button></a>
+  
+          <a  class="" href="https://instagram.com/ojoduchurchofchrist?igshid=OGY3MTU3OGY1Mw=="><button style="font-size: 12px;" class="btn btn-outline-danger"><i class="fa-brands fa-instagram"></i></button></a>
+  
+          <a  class="" href="https://www.youtube.com/@Church-of-christ-ojodu"><button style="font-size: 12px;" class="btn btn-outline-danger"><i class="fa-brands fa-youtube"></i></button></a>
+     
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            
+        </button>
+         </div>
+          </center>
+        
+      </div>
+      <div class="container-fluid d-none d-sm-block">
+        <center>
+            <a style="color: white;" class="text-decoration-none" href=""><button style="font-size: 12px;" class="btn btn-outline-secondary"><i class="fa-regular fa-envelope"></i></button> <span style="font-size: 12px;">churchofchristojodu@gmail.com</span></a>
+        </center>
+    </div>
+    
+    <div class="container-fluid d-none d-sm-block">
+        <center>
+            <a style="color: white;" class="text-decoration-none" href=""><button style="font-size: 12px;" class="btn btn-outline-primary"><i class="fa-solid fa-phone"></i></button> <span style="font-size: 12px;">Phone: +234 091 3822 3602</span></a>
+        </center>
+    </div>
+    
+  </nav>
+    <nav class="navbar navbar-expand-md navbar-dark  ">
+      <div class="container-fluid mt-1 ">
+       <a href="{% url 'index' %}"> <img class="img-fluid" style="width: 50px;margin-left: 20px;" src="../static/img/coc-logo.png" alt=""></a>
+  
+        <div style="background-image: url('');" class=" m-0 text-white">
+          <button class="btn btn-secondary mt-3 m-3 " type="button" data-bs-toggle="offcanvas" data-bs-target="#carousel">
+            <i class="fa-solid fa-bars fa-fade"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+      <section style="background-image: url(' {% static 'img/believe.jpg' %}  ');background-position: center;background-size: cover;background-repeat: repeat;">
+        <div style="color: white;"  class="container  p-5">
+        <h1  class="text-center mt-4">Welcome to Church of christ ojodu</h1>
+        <p class="text-center">We're delighted to have you with us. Please take a moment to fill out this First Timer Form so that we can better serve you.</p>
+        <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <form action="." method="POST">
+                    {% csrf_token %}
+                      <div class="form-group">
+                          <label style="color: white;"   for="name">Full Name:</label>
+                          <input type="text" class="form-control"  name="name" required>
+                      </div>
+
+                      <div class="form-group">
+                          <label style="color: white;"   for="email">Email:</label>
+                          <input type="email" class="form-control"  name="email" required>
+                      </div>
+
+                      <div class="form-group">
+                          <label style="color: white;"   for="phone">Phone Number:</label>
+                          <input type="tel" class="form-control"  name="phone" required>
+                      </div>
+
+                      <div class="form-group">
+                          <label style="color: white;"   for="visit_date">Date of Visit:</label>
+                          <input type="date" class="form-control"  name="visit_date" required>
+                      </div>
+
+                      <div class="form-group">
+                          <label style="color: white;" for="how_heard">How did you hear about us?</label>
+                          <select class="form-control"  name="how_heard" required>
+                              <option value="Friend">Friend</option>
+                              <option value="Website">Website</option>
+                              <option value="Social Media">Social Media</option>
+                              <option value="Event">Event</option>
+                              <option value="Other">Other</option>
+                          </select>
+                      </div>
+
+                      <div class="form-group">
+                          <label for="comments">Additional Comments (optional):</label>
+                          <textarea class="form-control"  name="comments" rows="4"></textarea>
+                      </div>
+                      <br>
+                      <button type="submit" class="btn btn-outline-light">Submit</button>
+                  </form>
+
+                </div>
+                
+                <div class="col-md-6"><br>
+                    <img src="{% static 'img/coc-logo.png' %}" alt="Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+</section>
+    
+<footer class="bg-light text-dark text-center py-3">
+    &copy; 2023 CHURCH OF CHRIST - OJODU
+</footer>
+</body>
+</html>
+
+
